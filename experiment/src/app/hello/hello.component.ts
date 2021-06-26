@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'hello',
   templateUrl: './hello.component.html',
-  styleUrls: ['./hello.component.css']
+  styleUrls: ['./hello.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HelloComponent implements OnInit {
   @Input() obj!: any;

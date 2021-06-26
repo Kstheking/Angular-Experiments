@@ -16,8 +16,9 @@ export class AppComponent implements OnInit {
   }
 
   onClick() {
-    this.helloObj = {
-      name: Date.now()
-    }
+    // this.helloObj = {
+    //   name: Date.now()
+    // }//here it changes the reference of the object, because it creates a new object every time
+    this.helloObj.name = Date.now() //here it doesn't change the reference of the object 
   }
 }
