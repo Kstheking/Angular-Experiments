@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hello.component.css']
 })
 export class HelloComponent implements OnInit {
-  @Input() name!: string;
-
+  @Input() obj!: any;
+  public name!: number;
   constructor() { }
 
   ngOnInit(): void {
+    this.name = this.obj.name;
   }
 
   get runChangeDetection(){
