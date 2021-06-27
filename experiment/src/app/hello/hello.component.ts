@@ -20,4 +20,7 @@ export class HelloComponent implements OnInit {
     return true;
   }
 
+  onHelloClick(){
+    console.log("I don't wanna do anything");
+  }
 }
